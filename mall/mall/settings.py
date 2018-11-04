@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     # 添加rest_framework应用
     'rest_framework',
     # 注册子应用
-    'user.apps.UserConfig',
+    'users.apps.UsersConfig',
     'areas.apps.AreasConfig',
     'carts.apps.CartsConfig',
     'contents.apps.ContentsConfig',
@@ -220,4 +220,4 @@ REST_FRAMEWORK = {
 
 
 # 自定义模型类配置信息
-AUTH_USER_MODEL = 'user.User'
+AUTH_USER_MODEL = 'users.User'
