@@ -16,6 +16,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -216,3 +217,7 @@ REST_FRAMEWORK = {
     # 异常处理
     'EXCEPTION_HANDLER': 'utils.exception.exception_handler',
 }
+
+
+# 自定义模型类配置信息
+AUTH_USER_MODEL = 'user.User'
