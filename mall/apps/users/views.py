@@ -6,6 +6,10 @@ from rest_framework.views import APIView
 
 from users.models import User
 
+# import os
+# if not os.environ.get("DJANGO_SETTINGS_MODULE"):
+#     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "drf_demo.settings")
+
 
 class RegisterUsernameCountView(APIView):
     """
